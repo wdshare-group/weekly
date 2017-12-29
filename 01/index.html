@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Title</title>
   <style type="text/css">
     * {
@@ -19,15 +19,17 @@
       position: relative;
       z-index: 999;
     }
+    .head-con {
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      justify-content: center;
+    }
     .max-width {
       position: relative;
       width: 80%;
       max-width: 1350px;
       margin: auto;
-      display: flex;
-      display: -webkit-flex;
-      align-items: center;
-      justify-content: center;
     }
     .max-width:after {
       display: block;
@@ -37,15 +39,18 @@
       height: 0;
     }
     .head-logo {
-      position: absolute;
-      left: 10px;
+      padding: 10px;
+    }
+    .body {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+    .body h2 {
+      font-size: 24px;
+      line-height: 200%;
     }
     @media screen and (max-width: 1400px) {
       .max-width { width: 90% }
-    }
-    .max-width h1 {
-      font-size: 2em;
-      padding: 10px 0;
     }
   </style>
 </head>
@@ -55,7 +60,25 @@
       <div class="head-logo">
         <img src="../logo.png">
       </div>
-      <h1>周刊</h1>
+    </div>
+  </div>
+  <div class="body">
+    <div class="max-width">
+      <h2>周刊-01</h2>
+      <h3>前端</h3>
+      <ul>
+        <li><a href="http://monkey.yoryor.top/" target="_blank">vscode 环境下的印象笔记编辑器，支持 markdown，语法高亮。</a></li>
+        <li><a href="https://github.com/WeiChiaChang/domain-cli" target="_blank">从 CLI 搜索域名是否已被注册。</a></li>
+        <li><a href="https://github.com/nzbin/magnify" target="_blank">功能强大的 jQuery 图片查看器插件（仿 Windows 照片查看器，支持拖拽、缩放、旋转、平移等等）</a></li>
+        <li><a href="http://flow-ui.refined-x.com/" target="_blank">Flow-UI是一套高定制性UI框架，基于Seajs/jQuery构建，内置CSS组件、JS插件、模块化开发体系、自动化开发工具、常见场景解决方案。</a></li>
+      </ul>
+      <h3>Python</h3>
+      <ul>
+        <li><a href="https://github.com/JasonLiTW/simple-railway-captcha-solver" target="_blank">实作基于CNN的订票验证码辨识以及验证性高的训练集产生器(含教程)</a></li>
+        <li><a href="https://github.com/TwoWater/Python" target="_blank">最简单详细的草根学习 Python 教程</a></li>
+        <li><a href="https://github.com/cls1991/qu" target="_blank">图床管理小工具</a></li>
+        <li><a href="https://github.com/cls1991/x-proxies" target="_blank">免费代理池</a></li>
+      </ul>
     </div>
   </div>
 </body>
