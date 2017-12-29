@@ -1,3 +1,3 @@
 # weekly
-wdshare weekly -----
-- [01](https://github.com/wdshare-group/weekly/blob/master/01/index.html)
+
+- [01](http://xianjs.org/weekly/01/index.html)
