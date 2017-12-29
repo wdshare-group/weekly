@@ -3,8 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fff;
+    }
+    .header {
+      background: #f5f5f5;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative;
+      z-index: 999;
+    }
+    .max-width {
+      position: relative;
+      width: 80%;
+      max-width: 1350px;
+      margin: auto;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .max-width:after {
+      display: block;
+      clear: both;
+      content: '';
+      visibilidy: hidden;
+      height: 0;
+    }
+    .head-logo {
+      position: absolute;
+      left: 10px;
+    }
+    @media screen and (max-width: 1400px) {
+      .max-width { width: 90% }
+    }
+    .max-width h1 {
+      font-size: 2em;
+      padding: 10px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>WDShare周刊-01</h1>
+  <div class="header">
+    <div class="head-con max-width">
+      <div class="head-logo">
+        <img src="../logo.png">
+      </div>
+      <h1>周刊</h1>
+    </div>
+  </div>
 </body>
 </html>
